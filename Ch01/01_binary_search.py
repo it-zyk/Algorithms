@@ -1,12 +1,12 @@
 def binary_search(list, item):
-    # low and high keep track of which part of the list you'll search in.
+    # low and high keep track of which part of the list you'll search in. 二分查找法
     low = 0
     high = len(list) - 1
 
     # While you haven't narrowed it down to one element ...
     while low <= high:
         # ... check the middle element
-        mid = (low + high) // 2   #取整除 - 返回商的整数部分（向下取整）
+        mid = (low + high) // 2   # 取整除 - 返回商的整数部分（向下取整）
         guess = list[mid]
         # Found the item.
         if guess == item:
