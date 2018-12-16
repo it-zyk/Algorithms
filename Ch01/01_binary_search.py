@@ -6,7 +6,7 @@ def binary_search(list, item):
     # While you haven't narrowed it down to one element ...
     while low <= high:
         # ... check the middle element
-        mid = (low + high) // 2
+        mid = (low + high) // 2   #取整除 - 返回商的整数部分（向下取整）
         guess = list[mid]
         # Found the item.
         if guess == item:
